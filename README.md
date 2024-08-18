@@ -1,118 +1,70 @@
+# Getting Started with Create React App
 
-# Diabetes Prediction App
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is a web application that predicts whether a person has diabetes based on various health metrics and svm model. It uses a machine learning model trained on the Pima Indians Diabetes dataset and is implemented with a Flask backend and a React frontend.
+## Available Scripts
 
-## Table of Contents
+In the project directory, you can run:
 
-- [Technologies](#technologies)
-- [Setup](#setup)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Endpoints](#endpoints)
-- [License](#license)
+### `npm start`
 
-## Technologies
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Backend:** Flask, Pandas, Scikit-learn
-- **Frontend:** React, Axios
-- **Machine Learning Model:** Support Vector Classifier (SVM)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Setup
+### `npm test`
 
-### Backend Setup
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. **Clone the repository:**
+### `npm run build`
 
-   ```bash
-   git clone https://github.com/your-username/diabetes-prediction-app.git
-   cd diabetes-prediction-app
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. **Create a virtual environment:**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3. **Install the required packages:**
+### `npm run eject`
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-4. **Run the Flask app:**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```bash
-   python app.py
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-   The backend should now be running on `http://127.0.0.1:5000/`.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Frontend Setup
+## Learn More
 
-1. **Navigate to the frontend directory:**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   ```bash
-   cd frontend
-   ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-2. **Install the required packages:**
+### Code Splitting
 
-   ```bash
-   npm install
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-3. **Start the React app:**
+### Analyzing the Bundle Size
 
-   ```bash
-   npm start
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   The frontend should now be running on `http://localhost:3000/`.
+### Making a Progressive Web App
 
-## Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. Open the frontend in your browser by navigating to `http://localhost:3000/`.
-2. Fill out the form with the necessary health metrics.
-3. Submit the form to get a prediction of whether the individual has diabetes.
+### Advanced Configuration
 
-## Project Structure
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```
-.
-├── app.py                  # Backend Flask application
-├── requirements.txt        # Python dependencies
-├── frontend/               # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Diabetes.js # Main React component for prediction
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── ...
-│   ├── public/
-│   ├── package.json
-│   └── ...
-└── README.md               # Project documentation
-```
+### Deployment
 
-## Endpoints
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- **POST `/predict`:** Accepts a JSON payload with the following fields:
-  - `Pregnancies`
-  - `Glucose`
-  - `BloodPressure`
-  - `SkinThickness`
-  - `Insulin`
-  - `BMI`
-  - `DiabetesPedigreeFunction`
-  - `Age`
-  
-  Returns a prediction indicating whether the individual is diabetic or not.
+### `npm run build` fails to minify
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
